@@ -1,0 +1,85 @@
+<html>
+<head>
+  <title>House Rent Portal</title>
+  <script type="text/javascript">
+  function validate()
+  {
+	  if(document.myForm.uname.value=="")
+	  {
+		  alert("Please provide your Name...");
+		  document.myForm.uname.focus();
+		  return false;
+	  }
+	  if(document.myForm.email.value=="")
+	  {
+		  alert("Please provide your E-Mail...");
+		  document.myForm.email.focus();
+		  return false;
+	  }
+	  return (true);
+  }
+  </script>
+<link rel="stylesheet" href="rent portal.css" type="text/css"/>
+<link rel="stylesheet" href="Contact US.css" type="text/css"/>
+<link href='https://fonts.googleapis.com/css?family=Kaushan Script' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=IM Fell Double Pica SC' rel='stylesheet'>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+<link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+
+</head>
+<body>
+  <div class="body1">
+  	<div class="main">
+    	<header>
+        <h1><a href="rent portal.html" id="logo">House Portal</a></h1>
+        	
+        <div class="wrapper">
+        	<div id="icons">
+            	<a href="https://www.facebook.com/" class="socialicons"><img src="icon1.jpg" alt=""/></a>
+                <a href="https://twitter.com/" class="socialicons"><img src="icon2.jpg"/></a>
+                <a href="https://www.linkedin.com/uas/login" class="socialicons"><img src="icon3.jpg" alt=""/></a>    
+                </div>
+        </div>
+        <div id="menu">
+        <div id="menu_active" class="align"><a href="rent portal.html">Main Page</a></div>
+        <div  class="align" ><a href="Buying.html">Buying</a></div>
+        <div class="align"><a href="Selling.html">Selling</a></div>
+        <div class="align"><a href="Renting.html">Renting</a></div>
+        <div class="align"><a href="Register.html">Register</a></div>
+        <div class="align"><a href="Contact Us.html">Contact Us</a></div>
+        </div>
+        </header>
+    </div>
+  </div>
+  <div class="body6">
+  	<div class="main">
+    <div class="wrapper">
+    	<form action="#" method="post" id="form_3" name="myForm" onSubmit="return( validate())" >
+        <div><h2 id="font_style">Contact Form</h2></div>
+        <div>Your Name</div><div><input type="text" name="uname" placeholder="your name"/></div>
+        <div>Your E-mail</div><div><input type="email" name="email" placeholder="Your E-mail"/></div>
+        <div>Your Message</div>
+        <div>
+        <textarea rows="15" cols="70"></textarea></div>
+        </form>
+        <div id="adjust"><input type="button" id="button2" name="clear" value="Clear"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="submit" id="button2" name="submit" value="Submit"/></div>
+    </div>
+    </div>
+  </div>
+    <div class="main">
+    <div class="wrapper">
+    <footer>
+    Copyright &copy; <span class="copy">Mithisi Technologies</span> All rights Reserved<br>
+    Designed by <span class="copy">G. Raghu Bhaskar</span>
+    </footer>
+    </div>
+    </div>
+    </div>
+    </div>
+  </div>
+  </div>
+  </body>
+  </html>
